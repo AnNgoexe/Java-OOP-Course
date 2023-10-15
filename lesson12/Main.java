@@ -1,27 +1,25 @@
 public class Main {
     public static void main(String[] args) {
-        Person person1 = new Person("Nguyen Van A", "Ha Noi");
+        Layer layer = new Layer();
 
-        Car car1 = new Car("Toyota", "Camry", "30E-123.45", person1, 4);
-        person1.addVehicle(car1);
+        Circle circle1 = new Circle(new Point(0, 0), 5, "red", true);
+        Circle circle2 = new Circle(new Point(1, 1), 3, "blue", false);
+        Rectangle rectangle = new Rectangle(new Point(0, 0), 4, 5, "green", true);
+        Square square = new Square(new Point(2, 2), 6, "yellow", false);
 
-        MotorBike motorBike1 = new MotorBike("Honda", "Air Blade", "29F-678.90", person1, false);
-        person1.addVehicle(motorBike1);
+        layer.addShape(circle1);
+        layer.addShape(circle2);
+        layer.addShape(rectangle);
+        layer.addShape(square);
 
-        System.out.println(person1.getVehiclesInfo());
+        System.out.println(layer.getInfo());
 
-        Person person2 = new Person("Tran Thi B", "Da Nang");
-        car1.transferOwnership(person2);
+        layer.removeDuplicates();
 
-        System.out.println(person1.getVehiclesInfo());
-        System.out.println(person2.getVehiclesInfo());
+        System.out.println(layer.getInfo());
 
-        Vehicle vehicle1 = car1;
-        Vehicle vehicle2 = motorBike1;
+        layer.removeCircles();
 
-        System.out.println("Vehicle 1 is a Car: " + (vehicle1 instanceof Car));
-        System.out.println("Vehicle 2 is a MotorBike: " + (vehicle2 instanceof MotorBike));
-        System.out.println("Vehicle 1 Info: " + vehicle1.getInfo());
-        System.out.println("Vehicle 2 Info: " + vehicle2.getInfo());
+        System.out.println(layer.getInfo());
     }
 }
