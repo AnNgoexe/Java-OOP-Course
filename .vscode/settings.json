@@ -1,0 +1,21 @@
+{
+    "java.project.sourcePaths": [
+        "lesson09",
+        "lesson08",
+        "lesson07",
+        "lesson04",
+        "lesson03",
+        "lesson02",
+        "lesson01",
+        "Lesson 9 - Inheritance 1",
+        "Lesson 8 - Student management",
+        "Lesson 7 - Transaction",
+        "Lesson 6 - JUnit",
+        "Lesson 5 - Fraction",
+        "Lesson 4 - Greatest Common Divisor",
+        "Lesson 3 - Prime Number",
+        "Lesson 11 - Polymorphism 1",
+        "Lesson 10 - Inheritance 2",
+        "lesson05"
+    ]
+}
