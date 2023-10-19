@@ -13,3 +13,6 @@ _ Lesson 10: Inheritance 2 - Student class and Staff class extend Person class <
 _ Lesson 11: Polymorphism 1 - Upcasting Student class and Staff class to Person class <br>
 _ Lesson 12: Polymorphism 2 - Abstract Shape class <br>
 _ Lesson 13: Abstract - Abstract Vehicle class <br>
+_ Lesson 14: Interface - GeometricObject class <br>
+_ Lesson 15: Exception definition <br>
+_ Lesson 16: Java Exception <br>
